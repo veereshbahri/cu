@@ -22,23 +22,50 @@ public class Bonus {
 				}
 				
 			}
+			else
+			{
+				bon=dp.getSalary()*0.02;
+			}
 		}
 
-		if(dp.getDname().equalsIgnoreCase("hr"))
+		else if(dp.getDname().equalsIgnoreCase("hr"))
 		{
 			if(dp.getAddress().getCountry().equalsIgnoreCase("india"))
 			{
 				if(dp.getGender().equalsIgnoreCase("male") && (2020-dp.getYear()>5))
 				{
-					bon=dp.getSalary()*0.02 + dp.getSalary()*0.1;
+					bon=dp.getSalary()*0.03 + dp.getSalary()*0.1;
 				}
 				if(dp.getGender().equalsIgnoreCase("female") && (2020-dp.getYear()>5))
 				{
-					bon=dp.getSalary()*0.02 + dp.getSalary()*0.12;
+					bon=dp.getSalary()*0.03 + dp.getSalary()*0.12;
 				}
 				else if(2020-dp.getYear()<5)
 				{
-					bon=dp.getSalary()*0.02+ dp.getSalary()*0.05;
+					bon=dp.getSalary()*0.03+ dp.getSalary()*0.05;
+				}
+				
+			}
+			else
+			{
+				bon=dp.getSalary()*0.03;
+			}
+		}
+		else
+		{
+			if(dp.getAddress().getCountry().equalsIgnoreCase("india"))
+			{
+				if(dp.getGender().equalsIgnoreCase("male") && (2020-dp.getYear()>5))
+				{
+					bon= dp.getSalary()*0.1;
+				}
+				if(dp.getGender().equalsIgnoreCase("female") && (2020-dp.getYear()>5))
+				{
+					bon=dp.getSalary()*0.12;
+				}
+				else if(2020-dp.getYear()<5)
+				{
+					bon= dp.getSalary()*0.05;
 				}
 				
 			}
