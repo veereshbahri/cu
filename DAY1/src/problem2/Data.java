@@ -8,7 +8,7 @@ public class Data {
 		System.out.println("\n\n");
 	}
 
-	public static void main(String[] args) {
+	public void getData() {
 		Department dp1=new Department("Ram", 31, "Male", 1200000,new Address("Delhi", "Delhi", "India"), 2013,"it");
 		Department dp2=new Department("Mark", 25,"Male", 800000, new Address("Tokyo", "Tokyo", "Japan"), 2015,"it");
 		Department dp3=new Department("Miley", 31, "Female", 1300000, new Address("Bangalore","Karnataka", "India"), 2014,"security");
